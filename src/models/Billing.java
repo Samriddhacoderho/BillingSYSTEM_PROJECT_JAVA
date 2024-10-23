@@ -24,11 +24,11 @@ public class Billing{
         int i=1;
         System.out.println("Billing Page:");
         System.out.println("\n\n");
-        System.out.println("S.N*************Item ID***************Item Name****************Item Price");
+        System.out.println("S.N*************Item ID***************Item Name****************Item Price********Item Quantity");
         for(Item x:hereitems)
         {
-            System.out.println(i+"************"+x.getItemID()+"*****************"+x.getItemName()+"*****************"+x.getItemPrice());
-            total=total+x.getItemPrice();
+            System.out.println(i+"***************"+x.getItemID()+"*******************"+x.getItemName()+"*********************"+x.getItemPrice()+"**************"+x.getItemQuantity());
+            total=total+(x.getItemPrice()*x.getItemQuantity());
             i++;
         }
         System.out.println("\nTotal Price:"+total);

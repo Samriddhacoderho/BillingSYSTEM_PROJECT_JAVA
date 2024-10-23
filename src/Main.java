@@ -13,11 +13,11 @@ public class Main {
     public static void main(String[] args) {
         Admin a1 = new Admin();
         Item[] items = {
-                new Item(10011, "Bed", 34400.67),
-                new Item(20011, "Piano", 78666.69),
-                new Item(30011, "Book", 890.3),
-                new Item(40011, "Pillow", 79),
-                new Item(50011, "Laptop", 45000)
+                new Item(10011, "Bed", 34400.67,100),
+                new Item(20011, "Piano", 78666.69,100),
+                new Item(30011, "Book", 890.3,100),
+                new Item(40011, "Pillow", 79,100),
+                new Item(50011, "Laptop", 45000,100)
         };
         List<Item> itemList = new ArrayList<>();
         List<Item> billItemList=new ArrayList<>();
