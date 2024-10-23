@@ -12,6 +12,8 @@ public class Main {
 
     public static void main(String[] args) {
         Admin a1 = new Admin();
+
+        //database part
         Item[] items = {
                 new Item(10011, "Bed", 34400.67,100),
                 new Item(20011, "Piano", 78666.69,100),
@@ -19,6 +21,9 @@ public class Main {
                 new Item(40011, "Pillow", 79,100),
                 new Item(50011, "Laptop", 45000,100)
         };
+
+        //datababse part
+
         List<Item> itemList = new ArrayList<>();
         List<Item> billItemList=new ArrayList<>();
         for (Item x : items) {
